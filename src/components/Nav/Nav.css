@@ -1,0 +1,147 @@
+.banner {
+  width: 100%;
+  height: 100%;
+}
+
+.banner-container {
+  width: 100%;
+  height: 40px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--principal-blue);
+  height: 65px;
+  width: 100%;
+  position: fixed;
+  top: 38px;
+  padding-left: .5%;
+}
+
+ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 33px;
+}
+
+ul > li > a {
+  display: inline-block;
+  position: relative;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 4.8px;
+}
+
+ul > li > a:hover::before {
+  content: "•••";
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(52%, 6%);
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--principal-red);
+}
+
+
+ul > li > a:active {
+  color: var(--principal-red);
+}
+
+.btn-search {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-around;
+  width: 185px;
+  color: #FFFFFF;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.btn-search::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -9px;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+.icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icon, .icon-heart,.icon-shop {
+  cursor: pointer;
+}
+.icon-heart {
+  padding-top:2px ;
+}
+.icon-heart::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(../../assets/heartIcon.svg);
+  background-position: center center;
+  cursor: pointer;
+}
+
+.icon-heart:hover::before {
+  background-image: url(https://moviesshopco.vtexassets.com/assets/vtex/assets-builder/moviesshopco.theme3/3.0.40/heart-icon-active___f89baf3….svg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: all .4s ease;
+}
+
+.icon-shop{
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 18px;
+  background-image: url('../../assets/shopIcon.svg');
+  background-size: cover;
+}
+.icon-shop::before{
+  content: "1";
+  position: absolute;
+  top: 11px;
+  right: -8px;
+  background-color: #FFFFFF;
+  color: var(--principal-blue);
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  line-height: 16px;
+}
