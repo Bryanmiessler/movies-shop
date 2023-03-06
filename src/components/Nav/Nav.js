@@ -4,8 +4,7 @@ import Banner from '../../assets/bannerNav.gif';
 import Logo from '../../assets/movies-logo.svg';
 import ContactIcon from '../../assets/contactIcon.svg';
 import ProfileIcon from '../../assets/profileIcon.svg';
-import ShopIcon from '../../assets/shopIcon.svg';
-import SearchIcon from '../../assets/searchIcon.svg'
+import SearchIcon from '../../assets/searchIcon.svg';
 
 function Nav() {
   return (

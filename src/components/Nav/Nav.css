@@ -15,9 +15,8 @@ nav {
   background-color: var(--principal-blue);
   height: 65px;
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 38px;
-  padding-left: .5%;
 }
 
 ul{
@@ -25,7 +24,8 @@ ul{
   align-items: center;
   justify-content: center;
   list-style: none;
-  gap: 33px;
+  gap: 27px;
+  padding: 0;
 }
 
 ul > li > a {

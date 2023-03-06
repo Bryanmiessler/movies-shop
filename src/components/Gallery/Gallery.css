@@ -1,0 +1,39 @@
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.gallery-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery-slider {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.slider-thumbnail {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.slider-thumbnail:hover {
+  border-color: #666;
+}
+
+.slider-thumbnail img {
+  max-width: 100%;
+  height: auto;
+}
+
+.slider-thumbnail.active {
+  border-color: #000;
+}
