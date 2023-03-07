@@ -9,7 +9,7 @@ import SearchIcon from '../../assets/searchIcon.svg';
 function Nav() {
   return (
     <>
-      <div>
+      <div className="banner-container">
         <img className="banner" src={ Banner } alt="Banner promocion" />
       </div>
       <nav>

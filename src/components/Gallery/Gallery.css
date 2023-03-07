@@ -1,32 +1,69 @@
+.references-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  padding-left: 2%;
+}
+
+.references-container > a {
+  text-decoration: none;
+  color: #828282;
+  font-size: 11px;
+}
+.references-container > a:hover {
+  color: var(--principal-blue);
+}
+.references-container > p {
+  text-decoration: none;
+  color: #828282;
+  font-size: 11px;
+}
+
+.references-container .name-item {
+  color: var(--principal-blue);
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .gallery-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  justify-content: center;
+  width: 60%;
 }
 
 .gallery-image img {
-  max-width: 100%;
+  max-width: 600px;
   height: auto;
+}
+
+.gallery-image {
+  position: relative;
+  transition: transform 0.3s ease-out;
 }
 
 .gallery-slider {
   display: flex;
+  position: relative;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 20px;
+  align-items: center;
+  gap: 20px;
+  width: 300px;
+  height: 600px;
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom, transparent, black 30%, black 70%, transparent);
 }
 
 .slider-thumbnail {
-  width: 60px;
-  height: 60px;
+  width: 162px;
+  height: 162px;
   margin-right: 10px;
-  border: 2px solid #ccc;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-}
-
-.slider-thumbnail:hover {
-  border-color: #666;
 }
 
 .slider-thumbnail img {
@@ -34,6 +71,103 @@
   height: auto;
 }
 
-.slider-thumbnail.active {
-  border-color: #000;
+.arrow-left {
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  width: 35px;
+  height: 35px;
+  background-image: url("../../assets/leftArrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.arrow-left-gray {
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  width: 35px;
+  height: 35px;
+  background-image: url("../../assets/leftArrowGray.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.arrow-right {
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  width: 35px;
+  height: 35px;
+  background-image: url("../../assets/rightArrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.arrow-right-gray {
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  width: 35px;
+  height: 35px;
+  background-image: url("../../assets/rightArrowGray.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.arrow-up {
+  position: fixed;
+  top: 14%;
+  left: 6%;
+  width: 35px;
+  height: 35px;
+  background-image: url("../../assets/upArrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.arrow-down {
+  position: fixed;
+  bottom: 6%;
+  left: 6%;
+  width: 35px;
+  height: 35px;
+  background-image: url("../../assets/downArrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 1;
 }
