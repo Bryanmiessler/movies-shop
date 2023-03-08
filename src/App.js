@@ -11,6 +11,20 @@ import { useState } from "react";
 
 function App() {
   const [counter, setCounter] = useState(1);
+  const [cart, setCart] = useState([{
+    nombre: "Chaqueta género neutro, caqui con cierre de Mandalorian",
+    precio: 233.91,
+    cantidad: {counter},
+    talla: "L"
+  }]); 
+  const [message, setMessage] = useState(null);
+  
+  const producto = {
+    nombre: "Chaqueta género neutro, caqui con cierre de Mandalorian",
+    precio: 233.91,
+    cantidad: {counter},
+    talla: "L"
+  }
 
   const increase = () => {
     if (counter < 12) {
@@ -24,21 +38,24 @@ function App() {
     }
   };
 
-  const producto = {
-    nombre: "Chaqueta género neutro, caqui con cierre de Mandalorian",
-    precio: 233.91,
-    cantidad: {counter},
-    talla: "L"
+  function addToCart() {
+    setCart([...cart, producto]);
+    setMessage('Item agregado al carrito.');
+    setTimeout(() => {
+      setMessage(null);
+    }, 2000);
+    console.log(cart);
   }
+
 
 
   return (
     <>
-      <Nav />
+      <Nav cart={cart} increase={increase} decrease={decrease} counter={counter} />
       <ReferencePath />
       <div style={{display:'flex', width:'100%'}}>
         <Gallery />
-        <InfoProducto producto={producto} increase={increase} decrease={decrease} counter={counter} />
+        <InfoProducto addToCart={addToCart} message={message} cart={cart} producto={producto} increase={increase} decrease={decrease} counter={counter} />
       </div>
       <div style={{display:'flex'}}>
         <DeliverDetails />

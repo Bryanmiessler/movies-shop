@@ -1,22 +1,9 @@
-import { useState } from "react";
 import "./InfoProducto.css"
 import ArrowDown from '../../assets/downArrow.png'
 import HeartIcon from '../../assets/heartIcon2.png'
 
 
 function InfoProducto(props) {
-  const [cart, setCart] = useState([]); 
-  const [message, setMessage] = useState(null);
-
-  function addToCart() {
-    setCart([...cart, props.producto]);
-    setMessage('Item agregado al carrito.');
-    setTimeout(() => {
-      setMessage(null);
-    }, 2000);
-    console.log(cart);
-  }
-
 
   return(
     <div className="container">
@@ -47,8 +34,8 @@ function InfoProducto(props) {
             <span>{props.counter}</span>
             <button onClick={props.increase}>+</button>
           </div>
-          <button className="add-cart" onClick={addToCart}>AGREGAR A MI BOLSA</button>
-          {message && <p className="message">{message}</p>}
+          <button className="add-cart" onClick={props.addToCart}>AGREGAR A MI BOLSA</button>
+          {props.message && <p className="message">{props.message}</p>}
         </div>
         <div className="feature-container">
           <p>Descripción de producto</p>

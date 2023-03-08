@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import './Nav.css';
 import Banner from '../../assets/bannerNav.gif';
 import Logo from '../../assets/movies-logo.svg';
 import ContactIcon from '../../assets/contactIcon.svg';
 import ProfileIcon from '../../assets/profileIcon.svg';
 import SearchIcon from '../../assets/searchIcon.svg';
+import CartModal from "../CartModal/CartModal";
 
-function Nav() {
+function Nav(props) {
+
+  const [showModal, setShowModal] = useState(false);
+
+  const handleCartClick = () => {
+    setShowModal(true);
+    console.log(props.cart[0].nombre);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
   return (
     <>
       <div className="container-b">
@@ -45,7 +58,8 @@ function Nav() {
           <img src={ ProfileIcon } alt="Icono de perfil" className="icon" />
           <span className="icon-heart"></span>
           <img src="https://moviesshopco.vtexassets.com/arquivos/map-locator-2.svg" alt="Icono de tiendas" className="icon" width={17} height={17} />
-          <span className="icon-shop"></span>
+          <span className="icon-shop" onClick={handleCartClick}></span>
+          {showModal && <CartModal cart={props.cart} onClose={handleCloseModal} increase={props.increase} decrease={props.decrease} counter={props.counter} />}
         </div>
       </nav>
     </>
