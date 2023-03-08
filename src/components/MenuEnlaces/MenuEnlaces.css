@@ -1,0 +1,92 @@
+.container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.links-container p, .container span{
+  cursor: pointer;
+}
+
+.links-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 12px;
+  color: #898E94;
+  font-weight: 400;
+}
+
+.container .title {
+  color: var(--principal-blue);
+  font-weight: 700;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  cursor: default;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.social > span:nth-child(1) {
+  background-image: url('../../assets/fb.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+}
+
+.social > span:nth-child(2) {
+  background-image: url('../../assets/ig.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+}
+
+.item-contact {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.mail-icon {
+  background-image: url('../../assets/mail.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+}
+
+.number-icon {
+  background-image: url('../../assets/phone.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+}
+
+.location-icon {
+  background-image: url('../../assets/location.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+}

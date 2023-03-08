@@ -5,6 +5,7 @@ import ReferencePath from "./components/ReferencePath/ReferencePath";
 import DeliverDetails from "./components/DeliverDetails/DeliverDetails";
 import Credifin from "./components/Credifin/Credifin";
 import Formulario from "./components/Formulario/Formulario";
+import MenuEnlaces from "./components/MenuEnlaces/MenuEnlaces";
 
 function App() {
   return (
@@ -20,8 +21,10 @@ function App() {
         <Credifin />
       </div>
       <div style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
-
         <Formulario />
+      </div>
+      <div style={{display:'flex', justifyContent:'center', alignItems:'center', flexDirection:'column'}}>
+        <MenuEnlaces/>
       </div>
 
     </>
