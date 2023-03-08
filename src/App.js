@@ -7,15 +7,25 @@ import Credifin from "./components/Credifin/Credifin";
 import Formulario from "./components/Formulario/Formulario";
 import MenuEnlaces from "./components/MenuEnlaces/MenuEnlaces";
 import Footer from "./components/Footer/Footer";
+import { useState } from "react";
 
 function App() {
+
+  const producto = {
+    nombre: "Chaqueta género neutro, caqui con cierre de Mandalorian",
+    precio: 233.91,
+    cantidad: 1,
+    talla: "L"
+  }
+
+
   return (
     <>
       <Nav />
       <ReferencePath />
       <div style={{display:'flex', width:'100%'}}>
         <Gallery />
-        <InfoProducto />
+        <InfoProducto producto={producto} />
       </div>
       <div style={{display:'flex'}}>
         <DeliverDetails />

@@ -15,7 +15,21 @@ function Nav() {
       <nav>
         <img src={ Logo } alt="Logo Movies" width="113" />
         <ul>
-          <li><a href="/#">MUJER</a></li>
+          <li><a href="/#">MUJER</a>
+            <ul className="submenu">
+              <div className="title-submenu">
+                <p>Mujer</p>
+                <a href="/#">Ver todo</a>
+              </div>
+              <li><a href="/#">Camisetas</a></li>
+              <li><a href="/#">Pijamas</a></li>
+              <li><a href="/#">Ropa interior</a></li>
+              <li><a href="/#">Chaquetas y buzos</a></li>
+              <li><a href="/#">Joggers, pantalones y shorts</a></li>
+              <li><a href="/#">Calzado</a></li>
+              <li><a href="/#">Accesorios</a></li>
+            </ul>
+          </li>
           <li><a href="/#">HOMBRE</a></li>
           <li><a href="/#">NEW ARRIVALS</a></li>
           <li><a href="/#">BÁSICOS</a></li>

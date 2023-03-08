@@ -22,6 +22,7 @@ nav {
 }
 
 ul{
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,7 +43,7 @@ ul > li > a {
   letter-spacing: 4.8px;
 }
 
-ul > li > a:hover::before {
+nav > ul > li > a:hover::before {
   content: "•••";
   position: absolute;
   top: 50%;
@@ -58,6 +59,83 @@ ul > li > a:hover::before {
 
 ul > li > a:active {
   color: var(--principal-red);
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 42px;
+  left: 20px;
+  background-color: #ffffff;
+  padding: 10px;
+  color: var(--principal-blue);
+  width: 824px;
+  height: 269px;
+}
+
+#root > nav > ul > li:nth-child(1):hover .submenu {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 50px;
+  padding-top: 30px;
+}
+
+.title-submenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.title-submenu > p:nth-child(1){
+  font-family: 'Montserrat', sans-serif;
+  color: var(--principal-red);
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 4.8px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.title-submenu > a{
+  font-family: 'Montserrat', sans-serif;
+  color: var(--principal-blue);
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.submenu > li > a{
+  position: relative;
+  color: var(--principal-blue);
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: 400;
+  margin: 0;
+}
+
+.submenu > li > a::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  width: 100%;
+  background-color: var(--principal-red);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-out;
+}
+
+.submenu > li > a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .btn-search {

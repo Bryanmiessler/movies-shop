@@ -4,8 +4,19 @@ import ArrowDown from '../../assets/downArrow.png'
 import HeartIcon from '../../assets/heartIcon2.png'
 
 
-function InfoProducto() {
-  const [counter, setCounter] = useState(0); 
+function InfoProducto(props) {
+  const [counter, setCounter] = useState(0);
+  const [carrito, setCarrito] = useState([]); 
+  const [mensaje, setMensaje] = useState(null);
+
+  function agregarAlCarrito() {
+    setCarrito([...carrito, props.producto]);
+    setMensaje('Producto agregado al carrito.');
+    setTimeout(() => {
+      setMensaje(null);
+    }, 2000);
+    console.log(carrito);
+  }
 
   const increase = () => {
     if (counter < 12) {
@@ -48,7 +59,8 @@ function InfoProducto() {
             <span>{counter}</span>
             <button onClick={increase}>+</button>
           </div>
-          <button className="add-cart">AGREGAR A MI BOLSA</button>
+          <button className="add-cart" onClick={agregarAlCarrito}>AGREGAR A MI BOLSA</button>
+          {mensaje && <p className="mensaje">{mensaje}</p>}
         </div>
         <div className="feature-container">
           <p>Descripción de producto</p>

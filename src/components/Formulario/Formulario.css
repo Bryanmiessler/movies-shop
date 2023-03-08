@@ -191,6 +191,7 @@ form > p:nth-child(2) {
   letter-spacing: 5px;
   background-color: var(--principal-red);
   border: none;
+  cursor: pointer;
 }
 
 .banner-pay-container {
