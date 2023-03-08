@@ -1,0 +1,41 @@
+footer {
+  /* height: 65px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--principal-red);
+  text-align: center;
+  padding-block: 15px;
+  color: #ffffff;
+}
+
+footer p {
+  margin: 0;
+}
+
+#root > footer > div > span:nth-child(1) {
+  background-image: url('https://moviesshopco.vteximg.com.br/arquivos/ssl-secure.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 23px;
+  width: 99px;
+  display: inline-block;
+}
+#root > footer > div > span:nth-child(3) {
+  background-image: url('https://moviesshopco.vteximg.com.br/arquivos/vtex-r.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 23px;
+  width: 99px;
+  display: inline-block;
+}
+
+.logos {
+  display: flex;
+  gap: 10px;
+}

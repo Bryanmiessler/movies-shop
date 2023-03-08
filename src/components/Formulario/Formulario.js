@@ -4,7 +4,7 @@ import BannerMethods from '../../assets/mediosPago.png'
 function Formulario() {
   return(
     <div className='container'>
-      <div className='banner-container'>
+      <div className='services-container'>
         <div className='item-banner'>
           <span className='secure-logo'></span>
           <p>Pagos<br/><span>seguros</span></p>

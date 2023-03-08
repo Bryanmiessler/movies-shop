@@ -6,7 +6,7 @@
   width: 80%;
 }
 
-.banner-container {
+.services-container {
   display: flex;
   position: relative;
   gap: 50px;
@@ -27,7 +27,7 @@
   font-size: 14px;
 }
 
-.banner-container > span {
+.services-container > span {
   background-image: url('../../assets/dot.png');
   background-position: center center;
   background-repeat: no-repeat;

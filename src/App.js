@@ -6,13 +6,14 @@ import DeliverDetails from "./components/DeliverDetails/DeliverDetails";
 import Credifin from "./components/Credifin/Credifin";
 import Formulario from "./components/Formulario/Formulario";
 import MenuEnlaces from "./components/MenuEnlaces/MenuEnlaces";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <>
       <Nav />
       <ReferencePath />
-      <div style={{display:'flex'}}>
+      <div style={{display:'flex', width:'100%'}}>
         <Gallery />
         <InfoProducto />
       </div>
@@ -26,7 +27,7 @@ function App() {
       <div style={{display:'flex', justifyContent:'center', alignItems:'center', flexDirection:'column'}}>
         <MenuEnlaces/>
       </div>
-
+      <Footer/>
     </>
   );
 }
