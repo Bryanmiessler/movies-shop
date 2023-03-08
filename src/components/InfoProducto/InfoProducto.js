@@ -5,30 +5,18 @@ import HeartIcon from '../../assets/heartIcon2.png'
 
 
 function InfoProducto(props) {
-  const [counter, setCounter] = useState(0);
-  const [carrito, setCarrito] = useState([]); 
-  const [mensaje, setMensaje] = useState(null);
+  const [cart, setCart] = useState([]); 
+  const [message, setMessage] = useState(null);
 
-  function agregarAlCarrito() {
-    setCarrito([...carrito, props.producto]);
-    setMensaje('Producto agregado al carrito.');
+  function addToCart() {
+    setCart([...cart, props.producto]);
+    setMessage('Item agregado al carrito.');
     setTimeout(() => {
-      setMensaje(null);
+      setMessage(null);
     }, 2000);
-    console.log(carrito);
+    console.log(cart);
   }
 
-  const increase = () => {
-    if (counter < 12) {
-      setCounter(counter + 1);
-    }
-  };
-
-  const decrease = () => {
-    if (counter > 0) {
-      setCounter(counter - 1);
-    }
-  };
 
   return(
     <div className="container">
@@ -55,12 +43,12 @@ function InfoProducto(props) {
         </div>
         <div className="counter-cart-container">
           <div className="counter-container">
-            <button onClick={decrease}>-</button>
-            <span>{counter}</span>
-            <button onClick={increase}>+</button>
+            <button onClick={props.decrease}>-</button>
+            <span>{props.counter}</span>
+            <button onClick={props.increase}>+</button>
           </div>
-          <button className="add-cart" onClick={agregarAlCarrito}>AGREGAR A MI BOLSA</button>
-          {mensaje && <p className="mensaje">{mensaje}</p>}
+          <button className="add-cart" onClick={addToCart}>AGREGAR A MI BOLSA</button>
+          {message && <p className="message">{message}</p>}
         </div>
         <div className="feature-container">
           <p>Descripción de producto</p>

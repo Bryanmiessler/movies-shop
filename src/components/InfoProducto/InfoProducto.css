@@ -169,15 +169,19 @@
   cursor: pointer;
 }
 
-.mensaje {
+.message {
   position: fixed;
-  top: 20px;
-  right: 20px;
-  background-color: green;
+  bottom: 20px;
+  left: 20px;
+  background-color: var(--principal-blue);
+  border-radius: 8px;
   color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
   padding: 10px;
+  z-index: 1900;
   animation-name: fadeOut;
-  animation-duration: 1s;
+  animation-duration: 8s;
   animation-fill-mode: forwards;
 }
 

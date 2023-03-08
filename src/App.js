@@ -10,11 +10,24 @@ import Footer from "./components/Footer/Footer";
 import { useState } from "react";
 
 function App() {
+  const [counter, setCounter] = useState(1);
+
+  const increase = () => {
+    if (counter < 12) {
+      setCounter(counter + 1);
+    }
+  };
+
+  const decrease = () => {
+    if (counter > 1) {
+      setCounter(counter - 1);
+    }
+  };
 
   const producto = {
     nombre: "Chaqueta género neutro, caqui con cierre de Mandalorian",
     precio: 233.91,
-    cantidad: 1,
+    cantidad: {counter},
     talla: "L"
   }
 
@@ -25,7 +38,7 @@ function App() {
       <ReferencePath />
       <div style={{display:'flex', width:'100%'}}>
         <Gallery />
-        <InfoProducto producto={producto} />
+        <InfoProducto producto={producto} increase={increase} decrease={decrease} counter={counter} />
       </div>
       <div style={{display:'flex'}}>
         <DeliverDetails />
