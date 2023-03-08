@@ -1,0 +1,30 @@
+.references-container {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  padding-left: 2%;
+}
+
+.references-container > a {
+  text-decoration: none;
+  color: #828282;
+  font-size: 11px;
+}
+.references-container > a:hover {
+  color: var(--principal-blue);
+}
+.references-container > p {
+  text-decoration: none;
+  color: #828282;
+  font-size: 11px;
+}
+
+.references-container .name-item {
+  color: var(--principal-blue);
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}

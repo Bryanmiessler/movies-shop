@@ -1,0 +1,97 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  /* margin-top: 30px; */
+}
+
+.banner-container {
+  display: flex;
+  position: relative;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.item-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.item-banner::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: block;
+  background: #ea0029;
+}
+
+.item-banner > p {
+  font-size: 14px;
+}
+
+.item-banner > p > span {
+  font-weight: 700;
+}
+
+.secure-logo {
+  background-image: url('https://moviesshopco.vtexassets.com/assets/vtex/assets-builder/moviesshopco.theme3/3.0.40/secure-payments___42f370bf5a0496631527bef53f7e62ad.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+}
+
+.deliver-logo {
+  background-image: url('https://moviesshopco.vtexassets.com/assets/vtex/assets-builder/moviesshopco.theme3/3.0.40/country-shipping___4f40f4cfebd38e0536fb852817e1eb06.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+}
+
+.client-logo {
+  background-image: url('https://moviesshopco.vtexassets.com/assets/vtex/assets-builder/moviesshopco.theme3/3.0.40/client-support___0c456988694b91c69503e2374b0b5c51.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+}
+
+.devolutions-logo {
+  background-image: url('https://moviesshopco.vtexassets.com/assets/vtex/assets-builder/moviesshopco.theme3/3.0.40/product-return___74facc2558bdf27bc9b774e2258d8ac7.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+}
+
+.follow-logo {
+  background-image: url('https://moviesshopco.vtexassets.com/assets/vtex/assets-builder/moviesshopco.theme3/3.0.40/package-following___546202e8cc2d3b95418a2b84a65682a0.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+}
+
