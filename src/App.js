@@ -14,15 +14,11 @@ import { useState } from "react";
 function App() {
   const [totalItems, setTotalItems] = useState(0);
   const [counter, setCounter] = useState(1);
-  const [cart, setCart] = useState([{
-    nombre: "Chaqueta género neutro, caqui con cierre de Mandalorian",
-    precio: 233.91,
-    cantidad: {counter},
-    talla: "L"
-  }]); 
+  const [cart, setCart] = useState([]); 
   const [message, setMessage] = useState(null);
   
   const producto = {
+    id:1,
     nombre: "Chaqueta género neutro, caqui con cierre de Mandalorian",
     precio: 233.91,
     cantidad: {counter},
@@ -43,7 +39,8 @@ function App() {
 
 
   function addToCart() {
-    setTotalItems(totalItems + counter)
+
+    setTotalItems(cart.length);
 
     setCart([...cart, producto]);
     setMessage('Item agregado al carrito.');
@@ -67,10 +64,10 @@ function App() {
         <DeliverDetails />
         <Credifin />
       </div>
-      <div style={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+      <div className='app-form-container'>
         <Formulario />
       </div>
-      <div style={{display:'flex', justifyContent:'center', alignItems:'center', flexDirection:'column'}}>
+      <div className='app-links-container'>
         <MenuEnlaces/>
       </div>
       <Footer/>

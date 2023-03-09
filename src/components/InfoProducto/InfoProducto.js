@@ -19,12 +19,12 @@ function InfoProducto(props) {
           <p>$259.990</p>
           <p>$233.991</p>
         </div>
-        <div class="size-selector">
+        <div className="size-selector">
           <div>
-            <button class="size">S</button>
-            <button class="size">M</button>
-            <button class="size">L</button>
-            <button class="size">XL</button>
+            <button className="size">S</button>
+            <button className="size">M</button>
+            <button className="size">L</button>
+            <button className="size">XL</button>
           </div>
           <a href="/#">Guía de tallas</a>
         </div>

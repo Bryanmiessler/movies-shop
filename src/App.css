@@ -7,6 +7,19 @@
   display: flex;
 }
 
+.app-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 @media (max-width: 1024px) {
 
   .container-gallery-infoproduct {

@@ -28,10 +28,21 @@ function Gallery() {
     console.log(sliderContainer.scrollTop)
   };
 
+  const handleWheel = (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+
+    const scrollStep = 50;
+    const delta = Math.sign(event.deltaY);
+    const scrollAmount = delta * scrollStep;
+
+    sliderRef.current.scrollTop += scrollAmount;
+  };
+  
   return (
     <div className="gallery-container">
       <button onClick={() => handleScrollClick(-100)} className="arrow-up"></button>
-      <div className="gallery-slider" ref={sliderRef}>
+      <div className="gallery-slider" ref={sliderRef} onWheel={handleWheel}>
         {images.map((image) => (
           <div
           key={image.id}

@@ -11,7 +11,7 @@
 
 .background {
   background-color: rgba(3, 4, 78, 0.548);
-  width: 70%;
+  width: 60%;
   height: 100vh;
 }
 
@@ -21,8 +21,9 @@
   align-items: center;
   justify-content: flex-start;
   background-color: #ffffff;
-  width: 30%;
+  width: 40%;
   height: 100%;
+  overflow: auto;
 }
 
 .cart-content-title {
@@ -49,6 +50,22 @@
   border: none;
   padding: 0;
   cursor: pointer;
+}
+
+.vacio-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.vacio {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .product-container {
@@ -94,14 +111,14 @@
   text-align: left;
 }
 
-.price-old {
+.old-price {
   font-weight: 400;
   font-size: 14px;
   text-decoration: line-through;
   color: #7e7e7e;
 }
 
-.price-new {
+.new-price {
   font-size: 16px;
   font-weight: 700;
   color: #333;
