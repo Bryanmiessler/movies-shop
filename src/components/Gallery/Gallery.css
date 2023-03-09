@@ -213,3 +213,44 @@
     left: 91%;
   }
 }
+
+@media (max-width: 425px) {
+  .gallery-slider {
+    display: none;
+  }
+
+  div.container-gallery-infoproduct > div.gallery-container {
+    width: 100%;
+  }
+
+  .arrow-down {
+    display: none;
+  }
+
+  .arrow-up {
+    display: none;
+  }
+
+  .arrow-right {
+    right: 6px;
+  }
+
+  .arrow-left {
+    left: 6px;
+  }
+
+  .arrow-left-gray {
+    left: 6px;
+  }
+
+  .arrow-right-gray {
+    right: 6px;
+  }
+
+  div.container-gallery-infoproduct > div.gallery-container > div.gallery-image > img {
+    max-width: 425px;
+  }
+
+}
+
+

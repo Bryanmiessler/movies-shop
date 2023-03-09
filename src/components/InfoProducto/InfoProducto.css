@@ -202,3 +202,10 @@
     width: 50%;
   }
 }
+
+
+@media (max-width: 425px) {
+  .main-container-info-producto {
+    width: 100%;
+  }
+}

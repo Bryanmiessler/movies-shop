@@ -239,6 +239,20 @@ ul > li > a:active {
 
 /* Media Querys */
 
+@media (max-width: 425px) {
+  nav > div.icons-container > img:nth-child(1) {
+    display: none;
+  }
+
+  .icon-heart {
+    display: none;
+  }
+
+  nav > div.icons-container > img:nth-child(4) {
+    display: none;
+  }
+}
+
 @media (max-width: 1024px) {
 
   .icons-container {
@@ -300,3 +314,4 @@ ul > li > a:active {
     justify-content: space-between;
   }
 }
+

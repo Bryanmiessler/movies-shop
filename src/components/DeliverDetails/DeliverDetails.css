@@ -81,6 +81,19 @@
 }
 
 
+@media (max-width: 1024px) {
+  .deliver-details-container {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .container-credifin {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+}
+
 @media (max-width: 768px) {
   .deliver-first-container {
     gap: 10px;
@@ -92,4 +105,10 @@
     margin-bottom: 0;
     margin-top: 30px;
   } 
+}
+
+@media (max-width: 425px) {
+  div.container-deliver-credifin > div.deliver-details-container > p {
+    display: none;
+  }
 }

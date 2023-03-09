@@ -27,6 +27,9 @@
   color: var(--principal-blue);
   font-weight: 700;
   font-family: 'Montserrat', sans-serif;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 @media (max-width: 768px) {
@@ -34,3 +37,5 @@
     width: 100%;
   }
 }
+
+

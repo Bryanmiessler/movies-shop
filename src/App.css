@@ -17,3 +17,10 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 425px) {
+  .container-gallery-infoproduct {
+    flex-direction: column-reverse;
+  }
+
+}

@@ -5,6 +5,7 @@
   width: 50%;
   margin-block: 50px;
   gap: 10px;
+  padding-right: 73px;
 }
 
 .container-logo {
@@ -61,5 +62,14 @@
 
   .container-text {
     align-items: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container-credifin {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding-right: 0;
   }
 }

@@ -262,3 +262,45 @@ form > p:nth-child(2) {
   }
 
 }
+
+@media (max-width: 425px) {
+  .services-container {
+    flex-wrap: wrap;
+  }
+
+  .banner-pay-container > img {
+    width: 90%;
+  }
+
+  div:nth-child(6) > div > form > p:nth-child(1) {
+    text-align: center;
+  }
+
+  form > p:nth-child(2) {
+    width: 80%;
+  }
+
+  .submit-container {
+    width: 80%;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .input-text {
+    width: 90%;
+  }
+
+  .inputs-check-container {
+    width: 74%;
+  }
+
+  .submit-container {
+    width: 55%;
+  }
+}
