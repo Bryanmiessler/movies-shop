@@ -139,6 +139,77 @@
   cursor: pointer;
   z-index: 1;
 }
-.arrow-down-out {
-  display: none;
+
+
+@media (max-width: 1024px) {
+
+  .gallery-container {
+    flex-direction: column;
+    width: 50%;
+    order: 1;
+    overflow: hidden;
+  }
+
+  .gallery-slider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 163%; 
+    height: 105px; 
+    overflow: hidden;
+    order: 2;
+  }
+
+  .gallery-image img {
+    max-width: 450px;
+    height: auto;
+  }
+
+  .slider-thumbnail {
+    width: auto;
+    height: auto;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .slider-thumbnail img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .arrow-down {
+    transform: rotate(90deg);
+    bottom: 10%;
+    left: -1%;
+  }
+
+  .arrow-up {
+    transform: rotate(90deg);
+    top: 82%;
+    left: 91%;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-image img {
+    max-width: 350px;
+  }
+
+  .gallery-slider {
+    width: 230%;
+    margin-top: 20px;
+  }
+
+  .arrow-down {
+    transform: rotate(90deg);
+    bottom: 16%;
+    left: -1%;
+  }
+
+  .arrow-up {
+    transform: rotate(90deg);
+    top: 76%;
+    left: 91%;
+  }
 }

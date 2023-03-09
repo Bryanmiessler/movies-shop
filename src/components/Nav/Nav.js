@@ -26,6 +26,10 @@ function Nav(props) {
         <img className="banner" src={ Banner } alt="Banner promocion" />
       </div>
       <nav>
+        <div className="container-icons-responsive">
+          <span className="hamburguer-icon"></span>
+          <span className="find-icon"></span>
+        </div>
         <img src={ Logo } alt="Logo Movies" width="113" />
         <ul>
           <li><a href="/#">MUJER</a>
@@ -58,7 +62,10 @@ function Nav(props) {
           <img src={ ProfileIcon } alt="Icono de perfil" className="icon" />
           <span className="icon-heart"></span>
           <img src="https://moviesshopco.vtexassets.com/arquivos/map-locator-2.svg" alt="Icono de tiendas" className="icon" width={17} height={17} />
-          <span className="icon-shop" onClick={handleCartClick}></span>
+          <span className="icon-shop" onClick={handleCartClick}>
+            <span className="total-products">{props.totalItems}</span>
+          </span>
+          
           {showModal && <CartModal cart={props.cart} onClose={handleCloseModal} increase={props.increase} decrease={props.decrease} counter={props.counter} />}
         </div>
       </nav>

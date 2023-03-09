@@ -2,7 +2,7 @@ import './MenuEnlaces.css';
 
 function MenuEnlaces() {
   return(
-    <div className='container'>
+    <div className='container-link-menu'>
       <div className='links-container'>
         <div className='social-container'>
           <p className='title'>SÍGUENOS</p>

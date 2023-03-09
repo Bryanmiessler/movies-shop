@@ -208,3 +208,57 @@ form > p:nth-child(2) {
   width: 513px;
   max-height: 31px;
 }
+
+
+/* Media querys */
+
+
+@media (max-width: 1024px) {
+
+  .services-container {
+    padding-left: 0;
+    gap: 26px;
+  }
+
+  .item-banner {
+    gap: 10px;
+    width: auto;
+  }
+}
+@media (max-width: 768px) {
+
+  .services-container {
+    padding-left: 0;
+    gap: 15px;
+  }
+
+  .form > p:nth-child(2) {
+    width: 60%;
+  }
+
+  .item-banner {
+    gap: 10px;
+    width: auto;
+  }
+
+  .inputs-text-container {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .input-text {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .inputs-check-container {
+    width: 58%;
+  }
+
+  .submit-container {
+    flex-direction: column;
+    gap:20px;
+  }
+
+}

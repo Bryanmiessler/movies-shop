@@ -1,4 +1,4 @@
-.container {
+.main-container-info-producto {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -156,14 +156,14 @@
   font-size: 13px;
 }
 
-#root > div:nth-child(4) > div.container > div > div:nth-child(11) {
+#root > div.container-gallery-infoproduct > div.main-container-info-producto > div > div:nth-child(11) {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
   border-bottom: 0.5px solid #bdbdbd;
 }
-#root > div:nth-child(4) > div.container > div > div:nth-child(11) > img {
+#root > div.container-gallery-infoproduct > div.main-container-info-producto > div > div:nth-child(11) > img {
   width: 12px;
   height: 12px;
   cursor: pointer;
@@ -193,5 +193,12 @@
   to {
     opacity: 0;
     visibility: hidden;
+  }
+}
+
+
+@media (max-width: 1024px) {
+ .main-container-info-producto {
+    width: 50%;
   }
 }

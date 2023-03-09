@@ -1,4 +1,4 @@
-.container {
+.container-link-menu {
   width: 80%;
   display: flex;
   align-items: center;
@@ -6,7 +6,7 @@
   margin-bottom: 58px;
 }
 
-.links-container p, .container span{
+.links-container p, .container-link-menu span{
   cursor: pointer;
 }
 
@@ -20,7 +20,7 @@
   font-weight: 400;
 }
 
-.container .title {
+.container-link-menu .title {
   color: var(--principal-blue);
   font-weight: 700;
   font-size: 12px;
@@ -89,4 +89,11 @@
   height: 20px;
   width: 20px;
   display: inline-block;
+}
+
+
+@media (max-width: 768px) {
+  .links-container {
+    flex-wrap: wrap;
+  }
 }

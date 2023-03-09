@@ -6,7 +6,7 @@ import HeartIcon from '../../assets/heartIcon2.png'
 function InfoProducto(props) {
 
   return(
-    <div className="container">
+    <div className="main-container-info-producto">
       <div className="container-info-producto">
         <p className="title-product">
         CHAQUETA GÉNERO NEUTRO,<br />CAQUI CON CIERRE DE<br />MANDALORIAN

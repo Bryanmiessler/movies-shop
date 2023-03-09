@@ -1,3 +1,5 @@
+import './App.css';
+
 import Nav from "./components/Nav/Nav";
 import Gallery from "./components/Gallery/Gallery";
 import InfoProducto from "./components/InfoProducto/InfoProducto";
@@ -10,6 +12,7 @@ import Footer from "./components/Footer/Footer";
 import { useState } from "react";
 
 function App() {
+  const [totalItems, setTotalItems] = useState(0);
   const [counter, setCounter] = useState(1);
   const [cart, setCart] = useState([{
     nombre: "Chaqueta género neutro, caqui con cierre de Mandalorian",
@@ -38,7 +41,10 @@ function App() {
     }
   };
 
+
   function addToCart() {
+    setTotalItems(totalItems + counter)
+
     setCart([...cart, producto]);
     setMessage('Item agregado al carrito.');
     setTimeout(() => {
@@ -51,13 +57,13 @@ function App() {
 
   return (
     <>
-      <Nav cart={cart} increase={increase} decrease={decrease} counter={counter} />
+      <Nav totalItems={totalItems} cart={cart} increase={increase} decrease={decrease} counter={counter} />
       <ReferencePath />
-      <div style={{display:'flex', width:'100%'}}>
+      <div className='container-gallery-infoproduct'>
         <Gallery />
         <InfoProducto addToCart={addToCart} message={message} cart={cart} producto={producto} increase={increase} decrease={decrease} counter={counter} />
       </div>
-      <div style={{display:'flex'}}>
+      <div className='container-deliver-credifin'>
         <DeliverDetails />
         <Credifin />
       </div>

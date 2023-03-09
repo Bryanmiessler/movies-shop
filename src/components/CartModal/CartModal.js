@@ -27,7 +27,12 @@ function CartModal(props) {
                 <p className='price-old'>259.990</p>
                 <p className='price-new'>233.991</p>
               </div>
+          </div>
+          <div className='container-pay'>
+            <div className='pay-titles'>
+              
             </div>
+          </div>
         </div>
       </div>
     </div>
