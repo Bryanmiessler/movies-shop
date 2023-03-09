@@ -1,5 +1,7 @@
 import { useState, useRef } from "react";
+
 import './Gallery.css';
+
 import images from "../../photos.json";
 
 function Gallery() {

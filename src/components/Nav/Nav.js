@@ -1,10 +1,13 @@
 import React, { useState } from "react";
+
 import './Nav.css';
+
 import Banner from '../../assets/bannerNav.gif';
 import Logo from '../../assets/movies-logo.svg';
 import ContactIcon from '../../assets/contactIcon.svg';
 import ProfileIcon from '../../assets/profileIcon.svg';
 import SearchIcon from '../../assets/searchIcon.svg';
+
 import CartModal from "../CartModal/CartModal";
 
 function Nav(props) {
@@ -13,7 +16,6 @@ function Nav(props) {
 
   const handleCartClick = () => {
     setShowModal(true);
-    console.log(props.cart[0].nombre);
   };
 
   const handleCloseModal = () => {
@@ -65,7 +67,6 @@ function Nav(props) {
           <span className="icon-shop" onClick={handleCartClick}>
             <span className="total-products">{props.totalItems}</span>
           </span>
-          
           {showModal && <CartModal cart={props.cart} onClose={handleCloseModal} increase={props.increase} decrease={props.decrease} counter={props.counter} />}
         </div>
       </nav>

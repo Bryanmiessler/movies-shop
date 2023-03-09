@@ -153,57 +153,7 @@
 .prices-p-container > p {
   margin: 0;
 }
-/* .counter-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 22%;
-}
-
-.counter-cart-container > button, .counter-container > button{
-  background-color: transparent;
-  border: none;
-  font-weight: 500;
-  font-size: 10px;
-  padding: 0;
-  cursor: pointer;
-}
-
-.counter-cart-container > button {
-  height: 40px;
-  width: 78%;
-  background-color: var(--principal-blue);
-  color: #ffffff;
-  font-size: 12px;
-  font-weight: 700;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.counter-container > button {
-  font-size: 19px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  color: #7e7e7e;
-}
-
-.counter-container > span {
-  font-weight: 700;
-  font-family: 'Montserrat', sans-serif;
-} */
 
 
 
 
-
-/* width: 100px;
-    flex: auto;
-    text-align: left;
-    white-space: nowrap;
-    overflow: hidden!important;
-    text-overflow: ellipsis;
-    color: #131e29;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 18px;
-    text-transform: uppercase;
-    font-family: roboto; */
