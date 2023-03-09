@@ -47,7 +47,6 @@ function App() {
     setTimeout(() => {
       setMessage(null);
     }, 2000);
-    console.log(cart);
   }
 
 
